@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		form {
+			background-color: #eee;
+			padding: 20px;
+			margin: 0 auto;
+			width: 60%;
+			font: 16px sans-serif;
+			border-radius: 10px;
+			text-align: center;
+		}
+
+		label {
+			display: inline-block;
+			float: left;
+			padding-top: 5px;
+			text-align: right;
+			width: 35%;
+		}
+
+		input {
+			margin-top: 5px;
+			display: inline-block;
+			width: 45%;
+		}
+
+		textarea {
+			margin-top: 5px;
+			display: inline-block;
+			width: 45%;
+			height: 75px;
+		}
+
+	</style>
+
+	<nav>
+		<a href="/">Home</a>
+		<a href="/blog">All Blogs</a>
+		<a href="/login">Login</a>
+		<a href="/newpost">Add a Blog Entry</a>
+		<a href="/logout">Logout</a>
+	</nav>
+
+
+</head>
+
+<body>
+
+	{% block content %}
+  
+	{% endblock %}
+
+</body>
+
+</html>

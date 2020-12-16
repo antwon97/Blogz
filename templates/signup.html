@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content%}
+
+<form method="post">
+	<label>Username*:</label>
+  <input type="text" name="username" minlength="3" maxlength="20" required/>
+    </br>
+
+  <label>Password*:</label>
+  <input type="password" name="pworda" minlength="8" required/>
+    </br>
+
+  <label>Retype Password*:</label>
+  <input type="password" name="pwordb" minlength="8" required/>
+    </br>
+
+  <input type="submit" value="Signup"/>
+</form>
+
+{% for message in get_flashed_messages() %}
+    <p>{{ message }}</p>
+{% endfor %}
+
+{% endblock %}
